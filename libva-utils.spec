@@ -4,7 +4,7 @@
 #
 Name     : libva-utils
 Version  : 2.0.0
-Release  : 4
+Release  : 5
 URL      : https://github.com/01org/libva-utils/releases/download/2.0.0/libva-utils-2.0.0.tar.bz2
 Source0  : https://github.com/01org/libva-utils/releases/download/2.0.0/libva-utils-2.0.0.tar.bz2
 Summary  : No detailed summary available
