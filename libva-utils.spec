@@ -4,7 +4,7 @@
 #
 Name     : libva-utils
 Version  : 2.1.0
-Release  : 6
+Release  : 7
 URL      : https://github.com/intel/libva-utils/releases/download/2.1.0/libva-utils-2.1.0.tar.bz2
 Source0  : https://github.com/intel/libva-utils/releases/download/2.1.0/libva-utils-2.1.0.tar.bz2
 Summary  : No detailed summary available
