@@ -4,7 +4,7 @@
 #
 Name     : libva-utils
 Version  : 2.4.0
-Release  : 10
+Release  : 11
 URL      : https://github.com/intel/libva-utils/archive/2.4.0.tar.gz
 Source0  : https://github.com/intel/libva-utils/archive/2.4.0.tar.gz
 Summary  : Intel VA-API Media Applications and Scripts for libva
