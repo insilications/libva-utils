@@ -4,10 +4,10 @@
 #
 Name     : libva-utils
 Version  : 2.4.0
-Release  : 11
+Release  : 12
 URL      : https://github.com/intel/libva-utils/archive/2.4.0.tar.gz
 Source0  : https://github.com/intel/libva-utils/archive/2.4.0.tar.gz
-Summary  : Intel VA-API Media Applications and Scripts for libva
+Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause MIT
 Requires: libva-utils-bin = %{version}-%{release}
@@ -53,7 +53,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1549125374
+export SOURCE_DATE_EPOCH=1551303732
+export LDFLAGS="${LDFLAGS} -fno-lto"
 %autogen --disable-static
 make  %{?_smp_mflags}
 
@@ -65,7 +66,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1549125374
+export SOURCE_DATE_EPOCH=1551303732
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/libva-utils
 cp COPYING %{buildroot}/usr/share/package-licenses/libva-utils/COPYING
