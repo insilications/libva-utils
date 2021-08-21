@@ -1,2 +1,8 @@
 # This file contains additional pkgconfig build requirements that did
 # not get picked up automatically. One name per line, no whitespace.
+libva
+libva-drm
+libva-wayland
+libva-x11
+wayland-client
+x11

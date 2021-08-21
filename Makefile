@@ -1,5 +1,6 @@
 PKG_NAME := libva-utils
-URL = https://github.com/intel/libva-utils/archive/2.12.0/libva-utils-2.12.0.tar.gz
+URL = https://github.com/intel/libva-utils.git
 ARCHIVES = 
+ARCHIVES_GIT = 
 
 include ../common/Makefile.common

@@ -1,0 +1,4 @@
+-Ddrm=true
+-Dx11=true
+-Dwayland=true
+-Dtests=false
