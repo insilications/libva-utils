@@ -1,0 +1,115 @@
+libva-utils NEWS -- summary of changes.  2021-9-30
+Copyright (C) 2009-2020 Intel Corporation
+
+Version 2.13.0 - 30.Sep.2020
+* code style:unify the code styles using the style_unify script
+* fix: h264encode, hevcencode: fix integer overflow for high definition
+
+Version 2.12.0 - 21.Jun.2020
+* test: Remove version check for test vaInitialize_vaTerminate
+* vpp: Added 3DLUT sample code and configuration file
+
+Version 2.11.0 - 23.Mar.2020
+* vainfo: add VA_RC_TCBRC to reported caps list
+* jpegenc: Allow encoding a 4K frame
+* h264encode: Added low_power command line option
+* test_va_api: Enable new caps for VAConfigAttribEncryption
+* ci: upgrade FreeBSD to 12.2
+* ci: enable github actions
+
+Version 2.10.0 - 18.Dec.2020
+* add Mediacopy Sample code
+* Enable new caps for rate control TCBRC
+* Add support for a --repeat command line option to vp8enc.
+* fix one null pointer dereference risk 
+
+Version 2.9.0 - 11.Sep.2020
+* Fix KW issues
+* Add support for csc with RGBP
+
+Version 2.8.0 - 26.Jun.2020
+* test: cast VA_STATUS_ERROR_UNKNOWN to VAStatus type
+* test/fixture: fix GCC 10.0.1 error with drmDevicePaths
+
+Version 2.7.0 - 1.Apr.2020
+* meson: add missing samples
+* sfcsample: drop unused Linux-only header
+* autotools: drop libdrm dependency (only libva-drm is used)
+* autotools: drop unused X11 dependencies
+* Add 10/12bit RT format check
+* test/createsurfaces: add some scoped traces
+* test/streamable: add VAConfigAttrib and VASurfaceAttrib
+* Modify output CS settings for Chroma siting on Linux
+* Align libva attribute check
+* Added displaying supported config attributes
+* add the VP samples README
+
+Version 2.6.0 - 10.Dec.2019
+* Align libva attribute check
+* Added displaying supported config attributes
+* add the VP samples README.
+* add VP sample for usrptr and 1:N output
+
+Version 2.5.0 - 8.Jul.2019
+* meson: rename the h264enc binary to be in line with the autotools build
+* unify NEWS format
+* sfcsample: don't include X11 headers
+* test: update vaInitialize_vaTerminate_Bad_vaSetDriverName
+* Check for -fstack-protector
+* vavpp: csc with AYUV format
+* vavpp: requires BGRA frame when saving a BGRA file
+
+Version 2.4.0 - 1.Feb.2019
+* fix make dist issue caused by decode streamout sample
+* add VP sample for Blending.
+* add VP seperate sample for scaling,csc,sharpness,denoise,chromasitting.
+
+Version 2.3.0 - 30.Sep.2018
+* add HEVC encode sample code
+* Add sample code for avc decode streamout
+* Add VP8 sample encoder application (SVCT supported)
+
+Version 2.2.0 - DD.Jul.2018
+* Bump version to 2.2.0
+* Add meson build
+* Add vainfo support in Android
+* Remove driver specific test cases
+
+Version 2.1.0 - 12.Feb.2018
+* Bump version to 2.1.0
+* Refine gtest conformance cases
+* vp9enc: add support low power mode
+* vavpp: add support for RGBA/RGBX surface
+* vainfo: add support new profile/entrypoint pairs
+
+Version 2.0.0 - 21.Oct.2017
+* Bump version to 2.0.0
+* Add option '--device <device>' to vainfo
+* Add vp9enc for VP9 encoding
+* Add vavpp for video processing
+* Add FEI gtest cases
+* Fix segmentation fault in putsurface_wayland
+* Fix GCC 7.1.1 warnings/errors
+* Fix libva version printed out by vainfo
+
+Version 1.8.3 - 28.Jun.2017
+* Bump version to 1.8.3
+* Switch AC_PROG_LIBTOOL to LT_INIT
+* putsurface: include wayland-client.h instead of wayland-server.h
+* avcenc: add AUD NAL unit at the beginning of pic
+* avcenc: enable direct_spatial_mv_pred_flag for B frame
+* avcenc: add the frame number as the command line input parameter
+
+Version 1.8.2 - 22.May.2017
+* Bump version to 1.8.2
+
+Version 1.8.1 - 10.Apr.2017
+* Bump version to 1.8.1
+
+Version 1.8.0 - 31.Mar.2017
+* First release of libva-utils as a separate project
+* Follows libva release versioning
+* Contains all the utilities and tests for libva API
+* dynamically links to libva
+* building system clean ups
+* test suite included using GoogleTestFramework
