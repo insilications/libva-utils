@@ -2,4 +2,3 @@
 # picked up automatically. One name per line, no whitespace.
 buildreq-meson
 libva-dev
-libva-staticdev
